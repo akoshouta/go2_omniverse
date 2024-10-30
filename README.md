@@ -19,62 +19,62 @@ Get ready to take your research to the next level with this powerful new resourc
 ## Real time Go2 Balancing:
 
 <p align="center">
-<img width="1280" height="600" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/60c2233a-7586-49b6-a134-a7bddc4dd9ae" alt='Go2'>
+<img width="1280" height="600" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/60c2233a-7586-49b6-a134-a7bddc4dd9ae" alt='Go2'>
 </p>
 
 
 ## Real time G1 Balancing:
 
 <p align="center">
-<img width="1280" height="600" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/d035f72a-8996-461c-a902-38e68052d029" alt='Go2'>
+<img width="1280" height="600" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/d035f72a-8996-461c-a902-38e68052d029" alt='Go2'>
 </p>
 
 
 ## Go2 Ros2 Camera stream:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/c740147b-ce00-4d7c-94de-0140be135e3e" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/c740147b-ce00-4d7c-94de-0140be135e3e" alt='Go2'>
 </p>
 
 
 ## URDF real-time joints sync:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/a8060b6e-e9b7-4d30-89f2-8a50b7510a2b" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/a8060b6e-e9b7-4d30-89f2-8a50b7510a2b" alt='Go2'>
 </p>
 
 ## Foot force data stream:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/95a34b03-471e-496a-88cc-38e7c4e1906d" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/95a34b03-471e-496a-88cc-38e7c4e1906d" alt='Go2'>
 </p>
 
 
 ## Real-time RTX lidar stream:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/3f078bf2-e4b6-45ca-8807-36537a4125b5" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/3f078bf2-e4b6-45ca-8807-36537a4125b5" alt='Go2'>
 </p>
 
 
 ## Custom envs (Office):
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/e2e9bdd0-1f40-41a8-86bc-c1097ab3fd7b" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/e2e9bdd0-1f40-41a8-86bc-c1097ab3fd7b" alt='Go2'>
 </p>
 
 
 ## Custom envs (Warehouse):
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/5db6f331-60be-40bd-9b4b-ead44064ee44" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/5db6f331-60be-40bd-9b4b-ead44064ee44" alt='Go2'>
 </p>
 
 
 ## VR support:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/d5b82fac-d945-4462-8b3d-4026456847f4" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/d5b82fac-d945-4462-8b3d-4026456847f4" alt='Go2'>
 </p>
 
 
