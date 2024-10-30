@@ -1,5 +1,8 @@
 ![Digital Twins](https://github.com/abizovnuralem/go2_ros2_sdk/assets/33475993/ddbe30ab-21d1-46fd-b44b-198efba92771)
 
+About This Fork
+This repository is a fork of [go2_omniverse](https://github.com/abizovnuralem/go2_omniverse), modified to support Isaac Sim 4.2.0 and IsaacLab 1.2.0. This fork includes adjustments to ensure compatibility with these versions and may contain additional updates or enhancements specific to this setup.
+
 
 # Welcome to the Unitree Go2/G1 Digital Twins Project!
 
@@ -16,62 +19,62 @@ Get ready to take your research to the next level with this powerful new resourc
 ## Real time Go2 Balancing:
 
 <p align="center">
-<img width="1280" height="600" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/60c2233a-7586-49b6-a134-a7bddc4dd9ae" alt='Go2'>
+<img width="1280" height="600" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/60c2233a-7586-49b6-a134-a7bddc4dd9ae" alt='Go2'>
 </p>
 
 
 ## Real time G1 Balancing:
 
 <p align="center">
-<img width="1280" height="600" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/d035f72a-8996-461c-a902-38e68052d029" alt='Go2'>
+<img width="1280" height="600" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/d035f72a-8996-461c-a902-38e68052d029" alt='Go2'>
 </p>
 
 
 ## Go2 Ros2 Camera stream:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/c740147b-ce00-4d7c-94de-0140be135e3e" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/c740147b-ce00-4d7c-94de-0140be135e3e" alt='Go2'>
 </p>
 
 
 ## URDF real-time joints sync:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/a8060b6e-e9b7-4d30-89f2-8a50b7510a2b" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/a8060b6e-e9b7-4d30-89f2-8a50b7510a2b" alt='Go2'>
 </p>
 
 ## Foot force data stream:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/95a34b03-471e-496a-88cc-38e7c4e1906d" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/95a34b03-471e-496a-88cc-38e7c4e1906d" alt='Go2'>
 </p>
 
 
 ## Real-time RTX lidar stream:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/3f078bf2-e4b6-45ca-8807-36537a4125b5" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/3f078bf2-e4b6-45ca-8807-36537a4125b5" alt='Go2'>
 </p>
 
 
 ## Custom envs (Office):
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/e2e9bdd0-1f40-41a8-86bc-c1097ab3fd7b" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/e2e9bdd0-1f40-41a8-86bc-c1097ab3fd7b" alt='Go2'>
 </p>
 
 
 ## Custom envs (Warehouse):
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/5db6f331-60be-40bd-9b4b-ead44064ee44" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/5db6f331-60be-40bd-9b4b-ead44064ee44" alt='Go2'>
 </p>
 
 
 ## VR support:
 
 <p align="center">
-<img width="1200" height="440" src="https://github.com/abizovnuralem/go2_omniverse/assets/33475993/d5b82fac-d945-4462-8b3d-4026456847f4" alt='Go2'>
+<img width="1200" height="440" src="https://github.com/akoshouta/go2_omniverse/assets/33475993/d5b82fac-d945-4462-8b3d-4026456847f4" alt='Go2'>
 </p>
 
 
@@ -101,32 +104,61 @@ Together, let's push the boundaries of what's possible with the Unitree Go2/G1 a
 ## System requirements and installation
 You need to install:
 1. Ubuntu 22.04
-2. Nvidia Isaac Sim 2023.1.1
-3. Nvidia Orbit 0.3.0
+2. Nvidia Isaac Sim 4.2.0
+3. Nvidia IsaacLab 1.2.0
 4. Ros2 Humble
 
 
 Full instruction:
 ```
-After installation of Nvidia Isaac Sim 2023.1.1 and Ros2 Humble:
+# Step 1: Clone the IsaacLab repository
+git clone --branch v1.2.0 https://github.com/isaac-sim/IsaacLab.git
 
-1. Clone this specific IsaacLab repo version: https://github.com/isaac-sim/IsaacLab/releases/tag/v0.3.1
-2. Execute in ubuntu terminal:
-export ISAACSIM_PATH="${HOME}/.local/share/ov/pkg/isaac-sim-2023.1.1"
+# Step 2: Set necessary environment variables (add to ~/.bashrc for persistence)
+export ISAACSIM_PATH="${HOME}/.local/share/ov/pkg/isaac-sim-4.2.0"
 export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"
-and also put it inside .bashrc file
-3. Inside the root folder of Orbit repo (https://github.com/isaac-sim/IsaacLab/releases/tag/v0.3.1) execute ln -s ${ISAACSIM_PATH} _isaac_sim
-4. Execute ./orbit.sh --conda
-5. Execute conda activate orbit
-6. Execute sudo apt install cmake build-essential
-7. Execute ./orbit.sh --install
-8. Execute ./orbit.sh --extra rsl_rl
-9. Verify the installation using "python source/standalone/tutorials/00_sim/create_empty.py" You should be inside conda env.
-10. You need to check that you have "Isaac Sim Python 2023.1.1 - New Stage*" on the top of the window.
-11. Clone this repo with git clone https://github.com/abizovnuralem/go2_omniverse/ --recurse-submodules -j8 --depth=1
-12. Copy the config file Unitree_L1.json (located in go2_omniverse/Isaac_sim/Unitree/Unitree_L1.json) for the Unitree L1 LiDAR to the folder IsaacLab-0.3.1/source/data/sensors/lidar/Unitree_L1.json (if the path doesnt exists, create it)
-13. Copy all material files in the isaac-sim-2023.1.1/data/material_files folder to IsaacLab_v0.3.1/source/data/material_files (if the path doesnt exists, create it)
-14. Execute ./run_sim.sh (without activated conda orbit env)
+echo 'export ISAACSIM_PATH="${HOME}/.local/share/ov/pkg/isaac-sim-4.2.0"' >> ~/.bashrc
+echo 'export ISAACSIM_PYTHON_EXE="${ISAACSIM_PATH}/python.sh"' >> ~/.bashrc
+source ~/.bashrc
+
+# Step 3: Create a symbolic link for Isaac Sim inside the IsaacLab directory
+cd IsaacLab
+ln -s ${ISAACSIM_PATH} _isaac_sim
+
+# Step 4: Set up the Conda environment
+./isaaclab.sh --conda
+
+# Step 5: Activate the Conda environment "isaaclab"
+conda activate isaaclab
+
+# Step 6: Install CMake and build-essential
+sudo apt install cmake build-essential -y
+
+# Step 7: Install required extensions inside IsaacLab
+./isaaclab.sh --install
+
+# Step 8: Verify installation
+python source/standalone/tutorials/00_sim/create_empty.py
+
+# Step 9: Check if "Isaac Sim Python 4.2.0 - New Stage" is displayed at the top of the Isaac Sim window
+# If there are no issues at this step, proceed to the next step
+
+# Step 10: Clone the go2_omniverse repository in the same directory level as IsaacLab
+cd ../
+git clone https://github.com/akoshouta/go2_omniverse/ --recurse-submodules -j8 --depth=1
+
+# Step 11: Copy the Unitree L1 LiDAR configuration file (work from the directory with IsaacLab and go2_omniverse folders)
+mkdir -p ./IsaacLab/source/exts/omni.isaac.sensor/data/lidar_configs
+cp go2_omniverse/Isaac_sim/Unitree/Unitree_L1.json IsaacLab/source/exts/omni.isaac.sensor/data/lidar_configs/Unitree_L1.json
+
+# Step 12: Copy files from the material_files folder
+mkdir -p IsaacLab/source/data/material_files
+cp -r ${ISAACSIM_PATH}/kit/mdl/* IsaacLab/source/data/material_files/
+
+# Step 13: Run the simulation (ensure the Conda environment is deactivated) >> make sure conda commands work in the (base) environment
+conda deactivate
+./run_sim.sh
+
 ```
 
 Some suggestions:

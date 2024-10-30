@@ -29,25 +29,25 @@ from typing import Literal
 import argparse  
 
 
-from omni.isaac.orbit.envs import RLTaskEnvCfg
-from omni.isaac.orbit.utils import configclass
+from omni.isaac.lab.envs import ManagerBasedRLEnvCfg
+from omni.isaac.lab.utils import configclass
 
-import omni.isaac.orbit.sim as sim_utils
-from omni.isaac.orbit.assets import ArticulationCfg, AssetBaseCfg
-from omni.isaac.orbit.scene import InteractiveSceneCfg
-from omni.isaac.orbit.sensors import ContactSensorCfg, RayCasterCfg, patterns
-from omni.isaac.orbit.terrains import TerrainImporterCfg
-from omni.isaac.orbit.utils import configclass
-from omni.isaac.orbit_assets.unitree import UNITREE_GO2_CFG 
-from omni.isaac.orbit.managers import EventTermCfg as EventTerm
-from omni.isaac.orbit.managers import ObservationGroupCfg as ObsGroup
-from omni.isaac.orbit.managers import ObservationTermCfg as ObsTerm
-from omni.isaac.orbit.managers import RewardTermCfg as RewTerm
-from omni.isaac.orbit.managers import SceneEntityCfg
-from omni.isaac.orbit.managers import TerminationTermCfg as DoneTerm
-from omni.isaac.orbit.utils import configclass
-from omni.isaac.orbit.utils.noise import AdditiveUniformNoiseCfg as Unoise
-import omni.isaac.orbit_tasks.locomotion.velocity.mdp as mdp
+import omni.isaac.lab.sim as sim_utils
+from omni.isaac.lab.assets import ArticulationCfg, AssetBaseCfg
+from omni.isaac.lab.scene import InteractiveSceneCfg
+from omni.isaac.lab.sensors import ContactSensorCfg, RayCasterCfg, patterns
+from omni.isaac.lab.terrains import TerrainImporterCfg
+from omni.isaac.lab.utils import configclass
+from omni.isaac.lab_assets.unitree import UNITREE_GO2_CFG 
+from omni.isaac.lab.managers import EventTermCfg as EventTerm
+from omni.isaac.lab.managers import ObservationGroupCfg as ObsGroup
+from omni.isaac.lab.managers import ObservationTermCfg as ObsTerm
+from omni.isaac.lab.managers import RewardTermCfg as RewTerm
+from omni.isaac.lab.managers import SceneEntityCfg
+from omni.isaac.lab.managers import TerminationTermCfg as DoneTerm
+from omni.isaac.lab.utils import configclass
+from omni.isaac.lab.utils.noise import AdditiveUniformNoiseCfg as Unoise
+import omni.isaac.lab_tasks.manager_based.locomotion.velocity.mdp as mdp
 
 from terrain_cfg import ROUGH_TERRAINS_CFG
 from robots.g1.config import G1_CFG
@@ -58,7 +58,7 @@ from omniverse_sim import args_cli
 base_command = {}
 
 
-def constant_commands(env: RLTaskEnvCfg) -> torch.Tensor:
+def constant_commands(env: ManagerBasedRLEnvCfg) -> torch.Tensor:
     global base_command
     """The generated command from the command generator."""
     tensor_lst = torch.tensor([0.0, 0.0, 0.0], dtype=torch.float32, device=env.device).repeat(env.num_envs, 1)
@@ -256,7 +256,7 @@ class EventCfg:
 
 
 @configclass
-class LocomotionVelocityRoughEnvCfg(RLTaskEnvCfg):
+class LocomotionVelocityRoughEnvCfg(ManagerBasedRLEnvCfg):
     """Configuration for the locomotion velocity-tracking environment."""
     # Scene settings
     scene: MySceneCfg = MySceneCfg(num_envs=4096, env_spacing=2.5)

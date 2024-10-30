@@ -4,7 +4,7 @@ from __future__ import annotations
 
 """Launch Isaac Sim Simulator first."""
 import argparse
-from omni.isaac.orbit.app import AppLauncher
+from omni.isaac.lab.app import AppLauncher
 
 
 import cli_args  
@@ -15,7 +15,7 @@ import threading
 
 # add argparse arguments
 parser = argparse.ArgumentParser(description="Train an RL agent with RSL-RL.")
-parser.add_argument("--cpu", action="store_true", default=False, help="Use CPU pipeline.")
+#parser.add_argument("--cpu", action="store_true", default=False, help="Use CPU pipeline.")
 parser.add_argument(
     "--disable_fabric", action="store_true", default=False, help="Disable fabric and use USD I/O operations."
 )
@@ -63,12 +63,12 @@ import torch
 import carb
 
 
-from omni.isaac.orbit_tasks.utils import get_checkpoint_path
-from omni.isaac.orbit_tasks.utils.wrappers.rsl_rl import (
+from omni.isaac.lab_tasks.utils import get_checkpoint_path
+from omni.isaac.lab_tasks.utils.wrappers.rsl_rl import (
     RslRlOnPolicyRunnerCfg,
     RslRlVecEnvWrapper
 )
-import omni.isaac.orbit.sim as sim_utils
+import omni.isaac.lab.sim as sim_utils
 import omni.appwindow
 from rsl_rl.runners import OnPolicyRunner
 

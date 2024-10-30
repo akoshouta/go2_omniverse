@@ -20,7 +20,7 @@ from collections.abc import Callable
 from dataclasses import MISSING
 from typing import Literal
 
-from omni.isaac.orbit.utils import configclass
+from omni.isaac.lab.utils import configclass
 
 
 @configclass
